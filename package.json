@@ -1,0 +1,18 @@
+{
+  "name": "cache-mash",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "private": true,
+  "repository": "git@github.com:leemhenson/cache-mash.git",
+  "author": "Lee Henson <lee.m.henson@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "libs/**/*"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.18.0"
+  },
+  "dependencies": {
+    "uuid": "8.3.0"
+  }
+}

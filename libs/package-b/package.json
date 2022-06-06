@@ -1,0 +1,12 @@
+{
+  "name": "package-b",
+  "version": "1.0.0",
+  "main": "src/",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "7.18.2"
+  },
+  "dependencies": {
+    "uuid": "8.3.2"
+  }
+}
