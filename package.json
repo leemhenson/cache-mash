@@ -6,6 +6,7 @@
   "repository": "git@github.com:leemhenson/cache-mash.git",
   "author": "Lee Henson <lee.m.henson@gmail.com>",
   "license": "MIT",
+  "scripts": {},
   "workspaces": [
     "libs/**/*"
   ],
