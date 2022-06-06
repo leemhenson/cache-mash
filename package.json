@@ -7,12 +7,17 @@
   "author": "Lee Henson <lee.m.henson@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "libs/**/*"
+    "libs/package-a",
+    "libs/package-b"
   ],
   "devDependencies": {
-    "@babel/core": "7.18.0"
+    "@babel/core": "7.18.0",
+    "jest": "27.5.1"
   },
   "dependencies": {
+    "package-a": "workspace:*",
+    "package-b": "workspace:*",
     "uuid": "8.3.0"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
