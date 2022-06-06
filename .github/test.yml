@@ -1,0 +1,15 @@
+name: GraphQL codegen
+
+on: [pull_request, workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version-file: ".nvmrc"
