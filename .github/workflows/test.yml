@@ -1,0 +1,37 @@
+name: GraphQL codegen
+
+on: [pull_request, workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version-file: ".nvmrc"
+
+      - run: ls -alh
+
+      - run: ls -alh .yarn
+
+      - run: ls -alh .yarn/cache
+
+      - run: yarn install --immutable
+
+      - run: ls -alh
+
+      - run: ls -alh libs/package-a
+
+      - run: ls -alh libs/package-b
+
+      - run: ls -alh node_modules
+
+      - run: ls -alh libs/package-a/node_modules
+
+      - run: ls -alh libs/package-b/node_modules
+
+      - run: ls -alh .yarn/cache
